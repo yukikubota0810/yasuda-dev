@@ -1,0 +1,179 @@
+@charset "euc-jp";
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+各ページ内容のCSS設定
+
+・トップページ
+・事業内容
+・オリジナルブランド
+・企業理念
+・会社情報
+・プライバシーポリシー
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+
+/* =========================================================================
+ トップページ
+------------------------------------------------------------------------- */
+
+#topVisual{
+	background:url(/images/visual.jpg) no-repeat;
+	width:910px;
+	height:402px;
+	text-indent:-9000px;
+	margin:3px auto 20px;
+	text-align:left;
+}
+
+
+/* =========================================================================
+ 事業内容
+------------------------------------------------------------------------- */
+
+.contentsBox1{
+	background:url(/images/contents/box_top.jpg) no-repeat top;
+	padding-top:12px;
+}
+
+.contentsBox2{
+	background:url(/images/contents/box_bottom.jpg) no-repeat bottom;
+	padding-bottom:12px;
+}
+
+.contentsBox3{
+	border-right:2px solid #000000;
+	border-left:2px solid #000000;
+	background:url(/images/contents/bg_img.jpg) no-repeat right;
+	padding:0 30px;
+	height:180px;
+}
+
+.contentsBox3 p{
+	background:url(/images/contents/text.gif) no-repeat left bottom;
+	text-indent:-9000px;
+	height:57px;
+}
+
+.contentsBox3 h3{
+	background:url(/images/contents/tl_item.gif) no-repeat left bottom;
+	text-indent:-9000px;
+	height:34px;
+}
+
+.contentsBox3 dl{
+	padding-top:10px;
+}
+
+.contentsBox3 dl dd{
+	padding:3px 0 8px;
+}
+
+
+/* =========================================================================
+ オリジナルブランド
+------------------------------------------------------------------------- */
+
+#brandList li{
+	float:left;
+	width:442px;
+	height:178px;
+}
+
+#brandList li.grandslow{
+	background:url(/images/brand/grandslow.gif) no-repeat;
+	margin:0 10px 0 4px;
+}
+
+#brandList li.earthgrand{
+	background:url(/images/brand/earthgrand.gif) no-repeat;
+}
+
+#brandList li h3,#brandList li p{
+	text-indent:-9000px;
+}
+
+/* =========================================================================
+ 取り扱いブランド
+------------------------------------------------------------------------- */
+
+#brandList2 li{
+	float:left;
+	width:442px;
+	height:128px;
+}
+
+#brandList2 li.fila{
+	background:url(/images/brand/fila.gif) no-repeat;
+	margin:0 10px 0 4px;
+}
+
+#brandList2 li.ellesse{
+	background:url(/images/brand/ellesse.gif) no-repeat;
+}
+
+#brandList2 li.reebok{
+	background:url(/images/brand/reebok.gif) no-repeat;
+	margin-left: 5px;
+}
+
+#brandList2 li h3,#brandList li p{
+	text-indent:-9000px;
+}
+
+
+/* =========================================================================
+ 企業理念
+------------------------------------------------------------------------- */
+#missionArea{
+	background:url(/images/mission/mission.gif) center no-repeat;
+	height:320px;
+}
+
+#missionArea h3,
+#missionArea dt,
+#missionArea dd{
+	text-indent:-9000px;
+}
+
+/* =========================================================================
+ 会社情報
+------------------------------------------------------------------------- */
+#companyList dt{
+	float:left;
+	width:11%;
+	both:clear;
+}
+
+#companyList dd{
+	float:left;
+	width:89%;
+	margin-bottom:8px;
+}
+
+#companyList dd p{
+	margin-bottom:3px;
+}
+
+#historyList dt{
+	float:left;
+	width:8%;
+	both:clear;
+}
+
+#historyList dd{
+	float:left;
+	width:92%;
+	margin-bottom:10px;
+}
+
+/* =========================================================================
+ プライバシーポリシー
+------------------------------------------------------------------------- */
+dl#policyArea dt{
+	font-weight:bold;
+}
+dl#policyArea dd{
+	margin:3px 0 10px;
+}

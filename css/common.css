@@ -1,0 +1,198 @@
+@charset "euc-jp";
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+全ページ共通のCSS設定
+
+・テキスト、フォント
+・余白
+・非表示
+・回り込み解除
+・リンク
+・テーブル
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+
+/* =========================================================================
+ text,font：テキスト、フォント
+------------------------------------------------------------------------- */
+.smallTxt{
+	font-size:11px;
+}
+
+.basicTxt{
+	font-size:12px;
+}
+
+.largeTxt{
+	font-size:15px;
+}
+
+.bold{
+	font-weight:bold;
+}
+
+.normal{
+	font-weight:normal;
+}
+
+.caution{
+}
+
+.center{
+	text-align:center !important;
+}
+
+.right{
+	text-align:right !important;
+}
+
+.left{
+	text-align:right !important;
+}
+
+
+.indent{
+	padding-left:1em;
+	text-indent:-1em;
+}
+
+.txtArea{
+	line-height:1.4;
+}
+
+/* =========================================================================
+ margin,padding：余白
+------------------------------------------------------------------------- */
+/* ----- 上部マージン ----- */
+.mt5{
+	margin-top:5px;
+}
+
+.mt15{
+	margin-top:15px;
+}
+
+.mt10{
+	margin-top:10px;
+}
+
+.mt20{
+	margin-top:20px;
+}
+
+.mt30{
+	margin-top:30px;
+}
+
+/* ----- 左マージン ----- */
+.ml10{
+	margin-left:10px;
+}
+
+.ml20{
+	margin-left:20px;
+}
+
+/* ----- 左右マージン ----- */
+
+.mlr0{
+	margin-left:0 !important;
+	margin-right:0 !important;
+}
+
+
+/* =========================================================================
+ hide：非表示
+------------------------------------------------------------------------- */
+.hide{
+	display:none;
+}
+
+
+/* =========================================================================
+ opacity：半透明
+------------------------------------------------------------------------- */
+.opacity{
+}
+
+
+/* =========================================================================
+ float clear：回り込み解除
+------------------------------------------------------------------------- */
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+/* =========================================================================
+ link：リンク
+------------------------------------------------------------------------- */
+/* ----- 基本色 ----- */
+a:link,
+a:visited{
+	color:#000000;
+	text-decoration:none;
+}
+
+a:hover,
+a:active{
+	color:#000000;
+	text-decoration:underline;
+}
+
+
+/* =========================================================================
+ table：テーブル
+------------------------------------------------------------------------- */
+/* ----- 基本テーブル ----- */
+table.basicTable{
+	width:838px;
+	font-size:12px;
+}
+
+table.basicTable caption{
+	display:none;
+}
+
+table.basicTable th{
+	padding:9px 2px 7px 10px;
+	background:#666666;
+	color:#FFFFFF;
+	font-weight:normal;
+	width:20%;
+}
+
+table.basicTable td{
+	padding:9px 8px 7px 10px;
+	background:#CCCCCC;
+}
+
+
+
+/* =========================================================================
+ その他
+------------------------------------------------------------------------- */
+
+.boxArea1{
+	background:url(/images/common/box_top.gif) no-repeat top;
+	padding-top:12px;
+}
+
+.boxArea2{
+	background:url(/images/common/box_bottom.gif) no-repeat bottom;
+	padding-bottom:12px;
+}
+
+.boxArea3{
+	border-right:2px solid #000000;
+	border-left:2px solid #000000;
+	padding:10px 30px;
+}
