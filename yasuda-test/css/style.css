@@ -57,7 +57,16 @@
 
 }
 
-
+@media (max-width: 767px) {
+    .service-block {
+      margin-bottom: 30px;
+    }
+  
+    .service-block:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
 
 /* =======================================================
 *
