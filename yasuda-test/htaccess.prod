@@ -1,4 +1,3 @@
 # redirect
 RewriteEngine On
 RewriteRule ^recruit\.html$ / [R=301,L]
-

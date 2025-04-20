@@ -1,4 +1,0 @@
-AuthUserFile auth/.htpasswd
-AuthName "Members' Page"
-AuthType Basic
-require valid-user

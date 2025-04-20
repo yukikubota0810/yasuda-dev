@@ -8,7 +8,18 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="robots" content="noindex,nofollow"><!--公開時に削除 アナリティクス入れるの忘れずに-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LZQ35PL7ZS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-LZQ35PL7ZS');
+    </script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>採用情報 | 安田開発株式会社</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -38,20 +49,21 @@
     <link rel="stylesheet" href="./css/style.css?20200917">
     <!-- Modernizr JS -->
     <script src="./js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-	<!--自作CSS -->
-	<style type="text/css">
-	.jumbotron { 
-        background: url(images/lower/recruit-fv.png) center no-repeat;
-		background-size: cover;
-		text-align: center;
-	}
-	</style>
-	</head>
-	<body>
+    <!--自作CSS -->
+    <style type="text/css">
+        .jumbotron {
+            background: url(images/lower/recruit-fv.png) center no-repeat;
+            background-size: cover;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
     <!-- =============== HEADER START ===================== -->
     <header role="banner" id="header">
         <div class="container">
@@ -60,7 +72,9 @@
                 <div class="navbar-header">
                     <!-- Mobile Toggle Menu Button -->
                     <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
-                    <h1><a class="navbar-brand" href="./"><img src="images/basic/yasuda-logo.png" alt="安田開発株式会社" width="100%"></a></h1>
+                    <h1>
+                        <a class="navbar-brand" href="./"><img src="images/basic/yasuda-logo.png" alt="安田開発株式会社" width="100%"></a>
+                    </h1>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
@@ -167,37 +181,39 @@
     <!-- トップに戻るボタン -->
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript">
-    $(function() {
-        var topBtn = $('#pagetop');
-        topBtn.click(function() {
-            $('body,html').animate({
-                scrollTop: 0
-            }, 1000);
-            return false;
+        $(function() {
+            var topBtn = $('#pagetop');
+            topBtn.click(function() {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 1000);
+                return false;
+            });
         });
-    });
     </script>
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript">
-    $(document).ready(function() {
-        var pagetop = $('.pagetop');
-        $(window).scroll(function() {
-            if ($(this).scrollTop() > 600) {
-                pagetop.fadeIn();
-            } else {
-                pagetop.fadeOut();
-            }
+        $(document).ready(function() {
+            var pagetop = $('.pagetop');
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 600) {
+                    pagetop.fadeIn();
+                } else {
+                    pagetop.fadeOut();
+                }
+            });
+            pagetop.click(function() {
+                $('body, html').animate({
+                    scrollTop: 0
+                }, 1000);
+                return false;
+            });
         });
-        pagetop.click(function() {
-            $('body, html').animate({ scrollTop: 0 }, 1000);
-            return false;
-        });
-    });
     </script>
     <script>
-        $(function(){
-            $(".nav a").each(function(){
-                if(this.href == location.href) {
+        $(function() {
+            $(".nav a").each(function() {
+                if (this.href == location.href) {
                     $(this).parents("li").addClass("active");
                 }
             });
@@ -217,11 +233,12 @@
     <!-- スクロールしてからアニメーションを動かす -->
     <script src="js/ScrollTrigger.min.js"></script>
     <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var trigger = new ScrollTrigger();
-    });
+        document.addEventListener('DOMContentLoaded', function() {
+            var trigger = new ScrollTrigger();
+        });
     </script>
 
     <!-- =============== //Footer END ===================== -->
 </body>
+
 </html>
