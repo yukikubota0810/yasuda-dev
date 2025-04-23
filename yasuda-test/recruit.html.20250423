@@ -21,35 +21,49 @@
         gtag('config', 'G-LZQ35PL7ZS');
     </script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>トップページ | 安田開発株式会社</title>
+    <title>採用情報 | 安田開発株式会社</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="安田開発株式会社はレストランカフェ・コンビニ・貸し会議室・ストレージ、撮影場所の提供、その他数々の事業に取り組んでいます。" />
-    <meta name="keywords" content="安田開発株式会社,レストランカフェ,コンビニ,貸し会議室,ストレージ、撮影場所" />
+    <meta name="description" content="安田開発株式会社の採用情報です。レストラン事業、コンビニ事業の募集を行っております。" />
+    <meta name="keywords" content="採用情報,レストランカフェ,コンビニ,キッチン,ホール" />
     <meta name="author" content="安田開発株式会社" />
     <!-- Facebook and Twitter integration -->
-    <meta property="og:title" content="トップページ | 安田開発株式会社" />
+    <meta property="og:title" content="採用情報 | 安田開発株式会社" />
     <meta property="og:image" content="" />
-    <meta property="og:url" content="http://yasuda-dev.co.jp" />
+    <meta property="og:url" content="http://yasuda-dev.co.jp/recruit.html" />
     <meta property="og:site_name" content="安田開発株式会社" />
-    <meta property="og:description" content="安田開発株式会社はレストランカフェ・コンビニ・貸し会議室・ストレージ、撮影場所の提供、その他数々の事業に取り組んでいます。" />
+    <meta property="og:description" content="安田開発株式会社の採用情報です。レストラン事業、コンビニ事業の募集を行っております。" />
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="shortcut icon" href="favicon.ico">
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
     <!-- Animate.css -->
     <link rel="stylesheet" href="./css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="./css/icomoon.css">
+    <!-- Simple Line Icons -->
+    <link rel="stylesheet" href="./css/simple-line-icons.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
     <!-- Bootstrap  -->
     <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css?20200917">
     <!-- Modernizr JS -->
     <script src="./js/modernizr-2.6.2.min.js"></script>
     <!-- FOR IE9 below -->
     <!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+    <!--自作CSS -->
+    <style type="text/css">
+        .jumbotron {
+            background: url(images/lower/recruit-fv.png) center no-repeat;
+            background-size: cover;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
-
     <!-- =============== HEADER START ===================== -->
     <header role="banner" id="header">
         <div class="container">
@@ -67,7 +81,7 @@
                         <li><a href="./index.html" data-nav-section="home">ホーム<br><span>Home</span></a></li>
                         <li><a href="./service.html" data-nav-section="service">事業案内<br><span>Service</span></a></li>
                         <li><a href="./about.html" data-nav-section="about">会社概要<br><span>About</span></a></li>
-                        <!-- <li><a href="./recruit.html" data-nav-section="recruit">採用情報<br><span>Recruit</span></a></li> -->
+                        <li><a href="./recruit.html" data-nav-section="recruit">採用情報<br><span>Recruit</span></a></li>
                     </ul>
                 </div>
             </nav>
@@ -79,53 +93,61 @@
     <div class="container-fluid fluid2 top-container">
         <div class="fv-inner">
             <div class="item">
-                <img src="images/basic/top-fv-pc.jpg" alt="" class="pc-show">
-                <img src="images/basic/top-fv-sp.jpg" alt="" class="sp-show">
-                <div class="fv-caption animated paddingLeft0" data-scroll="once toggle(.fadeInUp, .invisible) addHeight">
-                    <h1>安田開発株式会社<br><span>Yasuda Development</span></h1>
+                <img src="images/lower/recruit-fv-pc.jpg" alt="" class="pc-show">
+                <img src="images/lower/recruit-fv-sp.jpg" alt="" class="sp-show">
+                <div class="fv-caption-low animated paddingLeft0" data-scroll="once toggle(.fadeInUp, .invisible) addHeight">
+                    <h1>採用情報</h1>
                 </div>
             </div>
-        </div>
-        <div class="fvText">
-            <h2>価値あるサービスづくりに向けて</h2>
-            <p>私たちのミッションは、新たなサービスを切り拓き、育てていくことです。<br> 固定概念にとらわれない、斬新で先進的な事業に取り組み、
-                <br> 世の中に最適で最高の付加価値を提供していきます。
-            </p>
         </div>
     </div>
     <!-- /.FV -->
-    <section class="service-section">
-        <div class="service-contents">
-
-            <div class="service-block-wrapper">
-                <div class="image-wrap">
-                    <img src="images/basic/top_service01.jpg" alt="">
-                    <div class="text-overlay">
-                        <h1>事業案内<br><span>Service</span></h1>
-                    </div>
-                    <a href="./service.html" class="full-link"></a>
-                </div>
-            </div>
-
-            <div class="service-block-wrapper">
-                <div class="image-wrap">
-                    <img src="images/basic/top_service02.jpg" alt="">
-                    <div class="text-overlay">
-                        <h1>会社概要<br><span>About</span></h1>
-                    </div>
-                    <a href="./about.html" class="full-link"></a>
-                </div>
-            </div>
-
+    <section class="works-page">
+        <div class="container">
+            <p class="pan">採用情報</p>
         </div>
     </section>
-
-    <section class="service-section">
+    <section class="recruit-page to-animate fadeInUp animated">
         <div class="container">
-            <div class="row service-icon">
-                <div class="col-xs-12 col-md-12 text-center animated" data-scroll="once toggle(.fadeInUp, .invisible) addHeight">
-                    <div class="bottomText">
-                        <p><img src="images/basic/yasuda-logo.png" alt="安田開発株式会社" width="100%"></p>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 recruit-area">
+                    <h3>[レストラン事業]</h3>
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-6 animated" data-scroll="once toggle(.fadeInUp, .invisible) addHeight">
+                                    <p class="service-img"><img src="images/lower/recruite-01.jpg" width="100%" alt="ホールスタッフ募集"></p>
+                                    <h4>ホールスタッフ募集</h4>
+                                    <p class="service-txt">テレビやCM撮影にも使われる人気店もあり♪<br>進路決定後の高校生もバイトデビューOK<br>しっかり稼ぎたいフリーターさんも大歓迎◎<br><span>シフト自己申告、生活スタイルにあわせて働けます。</span></p>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-6 animated" data-scroll="once toggle(.fadeInUp, .invisible) addHeight">
+                                    <p class="service-img"><img src="images/lower/recruite-02.jpg" width="100%" alt="キッチンスタッフ募集"></p>
+                                    <h4>キッチンスタッフ募集</h4>
+                                    <p class="service-txt">キッチンデビューも大歓迎！！<br>野菜のカットや盛付など簡単な事からSTART<br>新メニューの味見も出来る人気ポジション♪<br><span>経験をお持ちの方は時給UPのご相談もします。</span></p>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 animated" data-scroll="once toggle(.fadeInUp, .invisible) addHeight">
+                                    <p class="recruit-btn"><a href="https://job-gear.net/yasudare/" target="_blank" rel="noopener noreferrer">レストランアルバイト応募はこちら＞</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-10 col-md-offset-1 recruit-area">
+                    <h3>[コンビニ事業]</h3>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-10 col-md-offset-1">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3 animated" data-scroll="once toggle(.fadeInUp, .invisible) addHeight">
+                                    <p class="service-img"><img src="images/lower/service-cv-lawson.jpg" width="100%" alt="コンビニ事業"></p>
+                                    <h4>ローソン</h4>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 animated" data-scroll="once toggle(.fadeInUp, .invisible) addHeight">
+                                    <p class="recruit-btn2">現在直接応募は行っておりません</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -140,7 +162,7 @@
                         <li><a href="./"><span>ホーム</span></a></li>
                         <li><a href="./service.html"><span>事業案内</span></a></li>
                         <li><a href="./about.html"><span>会社概要</span></a></li>
-                        <!-- <li><a href="./recruit.html"><span>採用情報</span></a></li> -->
+                        <li><a href="./recruit.html"><span>採用情報</span></a></li>
                         <li><a href="./copyright.html"><span>免責事項</span></a></li>
                         <li><a href="./privacy.html"><span>個人情報保護方針</span></a></li>
                         <li><a href="./socialmedia_policy.html"><span>ソーシャルメディアポリシー</span></a></li>

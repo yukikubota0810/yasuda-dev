@@ -21,35 +21,48 @@
         gtag('config', 'G-LZQ35PL7ZS');
     </script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>トップページ | 安田開発株式会社</title>
+    <title>会社概要 | 安田開発株式会社</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="安田開発株式会社はレストランカフェ・コンビニ・貸し会議室・ストレージ、撮影場所の提供、その他数々の事業に取り組んでいます。" />
-    <meta name="keywords" content="安田開発株式会社,レストランカフェ,コンビニ,貸し会議室,ストレージ、撮影場所" />
+    <meta name="description" content="安田開発株式会社の会社概要です。安田開発株式会社はレストランカフェ・コンビニ・貸し会議室・ストレージ、撮影場所の提供、その他数々の事業に取り組んでいます。" />
+    <meta name="keywords" content="会社概要,レストランカフェ,コンビニ,貸し会議室,ストレージ、撮影場所" />
     <meta name="author" content="安田開発株式会社" />
     <!-- Facebook and Twitter integration -->
-    <meta property="og:title" content="トップページ | 安田開発株式会社" />
+    <meta property="og:title" content="会社概要 | 安田開発株式会社" />
     <meta property="og:image" content="" />
-    <meta property="og:url" content="http://yasuda-dev.co.jp" />
+    <meta property="og:url" content="http://yasuda-dev.co.jp/about.html" />
     <meta property="og:site_name" content="安田開発株式会社" />
-    <meta property="og:description" content="安田開発株式会社はレストランカフェ・コンビニ・貸し会議室・ストレージ、撮影場所の提供、その他数々の事業に取り組んでいます。" />
+    <meta property="og:description" content="安田開発株式会社の会社概要です。安田開発株式会社はレストランカフェ・コンビニ・貸し会議室・ストレージ、撮影場所の提供、その他数々の事業に取り組んでいます。" />
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="shortcut icon" href="favicon.ico">
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
     <!-- Animate.css -->
     <link rel="stylesheet" href="./css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="./css/icomoon.css">
+    <!-- Simple Line Icons -->
+    <link rel="stylesheet" href="./css/simple-line-icons.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
     <!-- Bootstrap  -->
     <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css?20200605">
     <!-- Modernizr JS -->
     <script src="./js/modernizr-2.6.2.min.js"></script>
     <!-- FOR IE9 below -->
     <!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+        .jumbotron {
+            background: url(images/lower/about-fv.png) center no-repeat;
+            background-size: cover;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
-
     <!-- =============== HEADER START ===================== -->
     <header role="banner" id="header">
         <div class="container">
@@ -67,7 +80,7 @@
                         <li><a href="./index.html" data-nav-section="home">ホーム<br><span>Home</span></a></li>
                         <li><a href="./service.html" data-nav-section="service">事業案内<br><span>Service</span></a></li>
                         <li><a href="./about.html" data-nav-section="about">会社概要<br><span>About</span></a></li>
-                        <!-- <li><a href="./recruit.html" data-nav-section="recruit">採用情報<br><span>Recruit</span></a></li> -->
+                        <li><a href="./recruit.html" data-nav-section="recruit">採用情報<br><span>Recruit</span></a></li>
                     </ul>
                 </div>
             </nav>
@@ -79,54 +92,82 @@
     <div class="container-fluid fluid2 top-container">
         <div class="fv-inner">
             <div class="item">
-                <img src="images/basic/top-fv-pc.jpg" alt="" class="pc-show">
-                <img src="images/basic/top-fv-sp.jpg" alt="" class="sp-show">
-                <div class="fv-caption animated paddingLeft0" data-scroll="once toggle(.fadeInUp, .invisible) addHeight">
-                    <h1>安田開発株式会社<br><span>Yasuda Development</span></h1>
+                <img src="images/lower/about-fv-pc.jpg" alt="" class="pc-show">
+                <img src="images/lower/about-fv-sp.jpg" alt="" class="sp-show">
+                <div class="fv-caption-low animated paddingLeft0" data-scroll="once toggle(.fadeInUp, .invisible) addHeight">
+                    <h1>会社概要</h1>
                 </div>
             </div>
-        </div>
-        <div class="fvText">
-            <h2>価値あるサービスづくりに向けて</h2>
-            <p>私たちのミッションは、新たなサービスを切り拓き、育てていくことです。<br> 固定概念にとらわれない、斬新で先進的な事業に取り組み、
-                <br> 世の中に最適で最高の付加価値を提供していきます。
-            </p>
         </div>
     </div>
     <!-- /.FV -->
-    <section class="service-section">
-        <div class="service-contents">
-
-            <div class="service-block-wrapper">
-                <div class="image-wrap">
-                    <img src="images/basic/top_service01.jpg" alt="">
-                    <div class="text-overlay">
-                        <h1>事業案内<br><span>Service</span></h1>
-                    </div>
-                    <a href="./service.html" class="full-link"></a>
+    <section class="about-page">
+        <div class="container">
+            <p class="pan">会社概要</p>
+            <div class="row animated" data-scroll="once toggle(.fadeInUp, .invisible) addHeight">
+                <div class="col-md-12 text-center">
                 </div>
             </div>
-
-            <div class="service-block-wrapper">
-                <div class="image-wrap">
-                    <img src="images/basic/top_service02.jpg" alt="">
-                    <div class="text-overlay">
-                        <h1>会社概要<br><span>About</span></h1>
-                    </div>
-                    <a href="./about.html" class="full-link"></a>
-                </div>
-            </div>
-
         </div>
     </section>
-
-    <section class="service-section">
+    <section class="about-page to-animate fadeInUp animated">
         <div class="container">
-            <div class="row service-icon">
-                <div class="col-xs-12 col-md-12 text-center animated" data-scroll="once toggle(.fadeInUp, .invisible) addHeight">
-                    <div class="bottomText">
-                        <p><img src="images/basic/yasuda-logo.png" alt="安田開発株式会社" width="100%"></p>
+            <div class="row about-area">
+                <div class="col-xs-12 col-md-10 col-md-offset-1">
+                    <table class="tbl">
+                        <tr>
+                            <th>商号</th>
+                            <td>安田開発株式会社</td>
+                        </tr>
+                        <tr>
+                            <th>代表取締役</th>
+                            <td>金子　勝彦</td>
+                        </tr>
+                        <tr>
+                            <th>所在地</th>
+                            <td>〒101-0054 東京都千代田区神田錦町2-11</td>
+                        </tr>
+                        <tr>
+                            <th>電話番号</th>
+                            <td>03-3292-1231</td>
+                        </tr>
+                        <tr>
+                            <th>設立年月日</th>
+                            <td>1988年4月1日</td>
+                        </tr>
+                        <tr>
+                            <th>資本金</th>
+                            <td>3,000万円</td>
+                        </tr>
+                        <tr>
+                            <th>業務内容</th>
+                            <td>レストランカフェ・コンビニ・貸し会議室・ストレージ、撮影場所の提供、その他付帯事業</td>
+                        </tr>
+                        <tr>
+                            <th>適格請求書発行事業者登録番号</th>
+                            <td>T8010001059440</td>
+                        </tr>
+                        <tr class="last">
+                            <th>株主</th>
+                            <td><a href="http://www.yasuda-re.co.jp/" target="_blank" rel="noopener noreferrer">安田不動産株式会社</a>（100％子会社）</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="access-section">
+        <div class="container">
+            <div class="row" id="">
+                <div class="col-12 text-center animated" data-scroll="once toggle(.fadeInUp, .invisible) addHeight">
+                    <div class="section-text">
+                        <h4>アクセスマップ</h4>
                     </div>
+                </div>
+            </div>
+            <div class="row google-map">
+                <div class="col-md-10 col-md-offset-1 text-center animated" data-scroll="once toggle(.fadeInUp, .invisible) addHeight">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.434806904904!2d139.76018411525894!3d35.690916380191936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c0f7cee9b2d%3A0x915f2096de15a8ec!2z44CSMTAxLTAwNTQg5p2x5Lqs6YO95Y2D5Luj55Sw5Yy656We55Sw6Yym55S677yS5LiB55uu77yR77yR4oiS77yRIO-8tO-8p-WuieeUsOODk-ODqw!5e0!3m2!1sja!2sjp!4v1616663983744!5m2!1sja!2sjp" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
             </div>
         </div>
@@ -140,7 +181,7 @@
                         <li><a href="./"><span>ホーム</span></a></li>
                         <li><a href="./service.html"><span>事業案内</span></a></li>
                         <li><a href="./about.html"><span>会社概要</span></a></li>
-                        <!-- <li><a href="./recruit.html"><span>採用情報</span></a></li> -->
+                        <li><a href="./recruit.html"><span>採用情報</span></a></li>
                         <li><a href="./copyright.html"><span>免責事項</span></a></li>
                         <li><a href="./privacy.html"><span>個人情報保護方針</span></a></li>
                         <li><a href="./socialmedia_policy.html"><span>ソーシャルメディアポリシー</span></a></li>
