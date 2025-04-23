@@ -3,11 +3,23 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html lang="ja" class="no-js"><!--<![endif]-->
+<html lang="ja" class="no-js">
+<!--<![endif]-->
 
 <head>
     <meta charset="utf-8">
-    <meta name="robots" content="noindex,nofollow"><!--公開時に削除 アナリティクス入れるの忘れずに-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LZQ35PL7ZS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-LZQ35PL7ZS');
+    </script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>トップページ | 安田開発株式会社</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -38,7 +50,7 @@
 
 <body>
 
-	<!-- =============== HEADER START ===================== -->
+    <!-- =============== HEADER START ===================== -->
     <header role="banner" id="header">
         <div class="container">
             <!-- <div class="row"> -->
@@ -46,14 +58,16 @@
                 <div class="navbar-header">
                     <!-- Mobile Toggle Menu Button -->
                     <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
-                    <h1><a class="navbar-brand" href="./"><img src="images/basic/yasuda-logo.png" alt="安田開発株式会社" width="100%"></a></h1>
+                    <h1>
+                        <a class="navbar-brand" href="./"><img src="images/basic/yasuda-logo.png" alt="安田開発株式会社" width="100%"></a>
+                    </h1>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li><a href="./index.html" data-nav-section="home">ホーム<br><span>Home</span></a></li>
                         <li><a href="./service.html" data-nav-section="service">事業案内<br><span>Service</span></a></li>
                         <li><a href="./about.html" data-nav-section="about">会社概要<br><span>About</span></a></li>
-                        <li><a href="./recruit.html" data-nav-section="recruit">採用情報<br><span>Recruit</span></a></li>
+                        <!-- <li><a href="./recruit.html" data-nav-section="recruit">採用情報<br><span>Recruit</span></a></li> -->
                     </ul>
                 </div>
             </nav>
@@ -74,52 +88,40 @@
         </div>
         <div class="fvText">
             <h2>価値あるサービスづくりに向けて</h2>
-            <p>私たちのミッションは、新たなサービスを切り拓き、育てていくことです。<br>
-                固定概念にとらわれない、斬新で先進的な事業に取り組み、<br>
-                世の中に最適で最高の付加価値を提供していきます。</p>
+            <p>私たちのミッションは、新たなサービスを切り拓き、育てていくことです。<br> 固定概念にとらわれない、斬新で先進的な事業に取り組み、
+                <br> 世の中に最適で最高の付加価値を提供していきます。
+            </p>
         </div>
     </div>
     <!-- /.FV -->
     <section class="service-section">
         <div class="container">
-            <div class="row service-contents">
-                <div class="col-xs-12 col-sm-4 col-md-4 text-center animated" data-scroll="once toggle(.fadeInUp, .invisible) addHeight">
-                    <div class="service-inner">
-                        <div class="inner-item">
-                            <a href="./service.html">
-                                <img src="images/basic/top_service01.jpg" alt="" class="">
-                                <div class="item-caption animated paddingLeft0" data-scroll="once toggle(.fadeInUp, .invisible) addHeight">
-                                    <h1>事業案内<br><span>Service</span></h1>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-4 text-center animated" data-scroll="once toggle(.fadeInUp, .invisible) addHeight">
-                    <div class="service-inner">
-                        <div class="inner-item">
-                            <a href="./about.html">
-                                <img src="images/basic/top_service02.jpg" alt="" class="">
-                                <div class="item-caption animated paddingLeft0" data-scroll="once toggle(.fadeInUp, .invisible) addHeight">
-                                    <h1>会社概要<br><span>About</span></h1>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-4 text-center animated" data-scroll="once toggle(.fadeInUp, .invisible) addHeight">
-                    <div class="service-inner">
-                        <div class="inner-item">
-                            <a href="./recruit.html">
-                                <img src="images/basic/top_service03.jpg" alt="" class="">
-                                <div class="item-caption animated paddingLeft0" data-scroll="once toggle(.fadeInUp, .invisible) addHeight">
-                                    <h1>採用情報<br><span>Recruit</span></h1>
-                                </div>
-                            </a>
-                        </div>
+        <div class="row service-contents no-gutters">
+            <div class="col-xs-12 col-sm-6 text-center animated fadeInUp" data-scroll="once toggle(.fadeInUp, .invisible) addHeight">
+                <div class="service-inner">
+                    <div class="inner-item">
+                        <a href="./service.html">
+                            <img src="images/basic/top_service01.jpg" alt="" class="img-responsive center-block" />
+                            <div class="item-caption animated paddingLeft0 fadeInUp" data-scroll="once toggle(.fadeInUp, .invisible) addHeight">
+                                <h1>事業案内<br><span>Service</span></h1>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
+            <div class="col-xs-12 col-sm-6 text-center animated fadeInUp" data-scroll="once toggle(.fadeInUp, .invisible) addHeight">
+                <div class="service-inner">
+                    <div class="inner-item">
+                        <a href="./about.html">
+                            <img src="images/basic/top_service02.jpg" alt="" class="img-responsive center-block" />
+                            <div class="item-caption animated paddingLeft0 fadeInUp" data-scroll="once toggle(.fadeInUp, .invisible) addHeight">
+                                <h1>会社概要<br><span>About</span></h1>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
     <section class="service-section">
@@ -133,7 +135,7 @@
             </div>
         </div>
     </section>
-	<!-- =============== Footer ===================== -->
+    <!-- =============== Footer ===================== -->
     <footer id="footer">
         <div class="container">
             <div class="row">
@@ -142,7 +144,7 @@
                         <li><a href="./"><span>ホーム</span></a></li>
                         <li><a href="./service.html"><span>事業案内</span></a></li>
                         <li><a href="./about.html"><span>会社概要</span></a></li>
-                        <li><a href="./recruit.html"><span>採用情報</span></a></li>
+                        <!-- <li><a href="./recruit.html"><span>採用情報</span></a></li> -->
                         <li><a href="./copyright.html"><span>免責事項</span></a></li>
                         <li><a href="./privacy.html"><span>個人情報保護方針</span></a></li>
                         <li><a href="./socialmedia_policy.html"><span>ソーシャルメディアポリシー</span></a></li>
@@ -161,37 +163,39 @@
     <!-- トップに戻るボタン -->
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript">
-    $(function() {
-        var topBtn = $('#pagetop');
-        topBtn.click(function() {
-            $('body,html').animate({
-                scrollTop: 0
-            }, 1000);
-            return false;
+        $(function() {
+            var topBtn = $('#pagetop');
+            topBtn.click(function() {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 1000);
+                return false;
+            });
         });
-    });
     </script>
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript">
-    $(document).ready(function() {
-        var pagetop = $('.pagetop');
-        $(window).scroll(function() {
-            if ($(this).scrollTop() > 600) {
-                pagetop.fadeIn();
-            } else {
-                pagetop.fadeOut();
-            }
+        $(document).ready(function() {
+            var pagetop = $('.pagetop');
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 600) {
+                    pagetop.fadeIn();
+                } else {
+                    pagetop.fadeOut();
+                }
+            });
+            pagetop.click(function() {
+                $('body, html').animate({
+                    scrollTop: 0
+                }, 1000);
+                return false;
+            });
         });
-        pagetop.click(function() {
-            $('body, html').animate({ scrollTop: 0 }, 1000);
-            return false;
-        });
-    });
     </script>
     <script>
-        $(function(){
-            $(".nav a").each(function(){
-                if(this.href == location.href) {
+        $(function() {
+            $(".nav a").each(function() {
+                if (this.href == location.href) {
                     $(this).parents("li").addClass("active");
                 }
             });
@@ -211,12 +215,12 @@
     <!-- スクロールしてからアニメーションを動かす -->
     <script src="js/ScrollTrigger.min.js"></script>
     <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var trigger = new ScrollTrigger();
-    });
+        document.addEventListener('DOMContentLoaded', function() {
+            var trigger = new ScrollTrigger();
+        });
     </script>
 
-	<!-- =============== //Footer END ===================== -->
+    <!-- =============== //Footer END ===================== -->
 </body>
 
 </html>

@@ -1,0 +1,6 @@
+# authenticate(Basic)
+AuthUserFile /var/www/html/yasuda-dev.co.jp/htdocs/.htpasswd
+AuthGroupFile /dev/null
+AuthName "Please enter your ID and password"
+AuthType Basic
+require valid-user
