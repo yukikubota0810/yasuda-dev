@@ -21,17 +21,17 @@
         gtag('config', 'G-LZQ35PL7ZS');
     </script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>会社概要 | 安田開発株式会社</title>
+    <title>免責事項 | 安田開発株式会社</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="安田開発株式会社の会社概要です。安田開発株式会社はレストランカフェ・コンビニ・貸し会議室・ストレージ、撮影場所の提供、その他数々の事業に取り組んでいます。" />
-    <meta name="keywords" content="会社概要,レストランカフェ,コンビニ,貸し会議室,ストレージ、撮影場所" />
+    <meta name="description" content="安田開発株式会社の免責事項です。レストランカフェ・コンビニ・貸し会議室・ストレージ、撮影場所の提供、その他数々の事業に取り組んでいます。" />
+    <meta name="keywords" content="免責事項,レストランカフェ,コンビニ,貸し会議室,ストレージ、撮影場所" />
     <meta name="author" content="安田開発株式会社" />
     <!-- Facebook and Twitter integration -->
-    <meta property="og:title" content="会社概要 | 安田開発株式会社" />
+    <meta property="og:title" content="免責事項 | 安田開発株式会社" />
     <meta property="og:image" content="" />
-    <meta property="og:url" content="http://yasuda-dev.co.jp/about.html" />
+    <meta property="og:url" content="http://yasuda-dev.co.jp/service.html" />
     <meta property="og:site_name" content="安田開発株式会社" />
-    <meta property="og:description" content="安田開発株式会社の会社概要です。安田開発株式会社はレストランカフェ・コンビニ・貸し会議室・ストレージ、撮影場所の提供、その他数々の事業に取り組んでいます。" />
+    <meta property="og:description" content="安田開発株式会社の免責事項です。レストランカフェ・コンビニ・貸し会議室・ストレージ、撮影場所の提供、その他数々の事業に取り組んでいます。" />
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="shortcut icon" href="favicon.ico">
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
@@ -46,16 +46,16 @@
     <link rel="stylesheet" href="./css/owl.theme.default.min.css">
     <!-- Bootstrap  -->
     <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="./css/style.css?20200605">
+    <link rel="stylesheet" href="./css/style.css">
     <!-- Modernizr JS -->
     <script src="./js/modernizr-2.6.2.min.js"></script>
     <!-- FOR IE9 below -->
     <!--[if lt IE 9]>
-    <script src="js/respond.min.js"></script>
-    <![endif]-->
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
     <style type="text/css">
         .jumbotron {
-            background: url(images/lower/about-fv.png) center no-repeat;
+            background: url(images/lower/service-fv.png) center no-repeat;
             background-size: cover;
             text-align: center;
         }
@@ -80,7 +80,7 @@
                         <li><a href="./index.html" data-nav-section="home">ホーム<br><span>Home</span></a></li>
                         <li><a href="./service.html" data-nav-section="service">事業案内<br><span>Service</span></a></li>
                         <li><a href="./about.html" data-nav-section="about">会社概要<br><span>About</span></a></li>
-                        <!-- <li><a href="./recruit.html" data-nav-section="recruit">採用情報<br><span>Recruit</span></a></li> -->
+                        <li><a href="./recruit.html" data-nav-section="recruit">採用情報<br><span>Recruit</span></a></li>
                     </ul>
                 </div>
             </nav>
@@ -88,89 +88,60 @@
         </div>
     </header>
     <!-- =============== //HEADER END ===================== -->
-    <!-- FV -->
-    <div class="container-fluid fluid2 top-container">
-        <div class="fv-inner">
-            <div class="item">
-                <img src="images/lower/about-fv-pc.jpg" alt="" class="pc-show">
-                <img src="images/lower/about-fv-sp.jpg" alt="" class="sp-show">
-                <div class="fv-caption-low animated paddingLeft0" data-scroll="once toggle(.fadeInUp, .invisible) addHeight">
-                    <h1>会社概要</h1>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /.FV -->
-    <section class="about-page">
+    <section class="copyright-page">
         <div class="container">
-            <p class="pan">会社概要</p>
-            <div class="row animated" data-scroll="once toggle(.fadeInUp, .invisible) addHeight">
+            <p class="pan">免責事項</p>
+            <div class="row">
                 <div class="col-md-12 text-center">
+                    <h3>ご利用にあたって</h3>
+                </div>
+                <div class="col-md-10 col-md-offset-1">
+                    <p class="txt-wrapper">このウェブサイト（以下「当ウェブサイト」といいます。）は、安田開発株式会社（以下「弊社」といいます。）が管理・運営しております。当ウェブサイトをご利用の際には、以下のご利用条件をよくお読みいただき、これらの条件にご同意された場合のみご利用ください。<br><br>なお、弊社は当ウェブサイトのご利用条件を必要に応じて変更させていただく場合がございますので、ご利用の都度、内容をご確認いただきますようお願い致します。</p>
+                    <ol>
+                        <li>
+                            <h4 class="section__sub-h is-no-icon">（1）目的</h4>
+                            <div class="txt-wrapper">
+                                <p>当ウェブサイトは、あくまでもお客様の便宜に供するためのものであり、非営利目的に限り、お客様ご自身の責任でご利用いただくことができるものとします。</p>
+                            </div>
+                        </li>
+                        <li>
+                            <h4 class="section__sub-h is-no-icon">（2）著作権等</h4>
+                            <div class="txt-wrapper">
+                                <p>当ウェブサイトに掲載されている情報、内容、デザイン、プログラム及びその他全ての著作物は、弊社又は弊社にその利用を認めた権利者が著作権、商標権、その他の知的財産権を有しています。従ってお客様はこれらの権利を侵害しない範囲でのみ当ウェブサイトをご利用いただくことができますので、ご注意ください。</p>
+                            </div>
+                        </li>
+                        <li>
+                            <h4 class="section__sub-h is-no-icon">（3）変更</h4>
+                            <div class="txt-wrapper">
+                                <p>弊社は、当ウェブサイト及び当ウェブサイトに掲載している情報等をお客様に通知することなく変更する場合がございますのでご注意ください。</p>
+                            </div>
+                        </li>
+                        <li>
+                            <h4 class="section__sub-h is-no-icon">（4）保証</h4>
+                            <div class="txt-wrapper">
+                                <p>弊社は、当ウェブサイトに掲載している各種情報が最新かつ正確なものとなるよう努めますが、お客様が当ウェブサイトを利用されるに当って、その正確性、完全性、有用性等に関しての保証をするものではありません。従いまして弊社は、お客様が当該情報に基づいて起こされた行動によって生じた損害・不利益等に対して如何なる責任も負いません。</p>
+                            </div>
+                        </li>
+                        <li>
+                            <h4 class="section__sub-h is-no-icon">（5）責任</h4>
+                            <div class="txt-wrapper">
+                                <p>弊社は、当ウェブサイトのご利用に起因して生じた直接的又は間接的な損失や損害及びお客様と第三者間において生じたトラブル等についても責任を負いません。<br>また弊社は、お客様に事前に通知することなく当ウェブサイトの運営を中断または中止する場合がございます。この場合に生じた損害につきましても、弊社は責任を負うものではありません。</p>
+                            </div>
+                        </li>
+                        <li>
+                            <h4 class="section__sub-h is-no-icon">（6）他サイトへのリンク</h4>
+                            <div class="txt-wrapper">
+                                <p>当ウェブサイトから、もしくは当ウェブサイトへリンクを張っている弊社以外の第三者が運営するウェブサイトの内容は、それぞれ各社の責任で管理されるものですので、弊社はその内容について、またその利用によって生じた如何なる損害についても責任を負いません。<br>また、当ウェブサイトへのリンクにつきましては、弊社の事前の承諾を条件とし、弊社宛に個別にご連絡いただいた上で行っていただくようお願い致します。</p>
+                            </div>
+                        </li>
+                    </ol>
                 </div>
             </div>
         </div>
     </section>
-    <section class="about-page to-animate fadeInUp animated">
-        <div class="container">
-            <div class="row about-area">
-                <div class="col-xs-12 col-md-10 col-md-offset-1">
-                    <table class="tbl">
-                        <tr>
-                            <th>商号</th>
-                            <td>安田開発株式会社</td>
-                        </tr>
-                        <tr>
-                            <th>代表取締役</th>
-                            <td>金子　勝彦</td>
-                        </tr>
-                        <tr>
-                            <th>所在地</th>
-                            <td>〒101-0054 東京都千代田区神田錦町2-11</td>
-                        </tr>
-                        <tr>
-                            <th>電話番号</th>
-                            <td>03-3292-1231</td>
-                        </tr>
-                        <tr>
-                            <th>設立年月日</th>
-                            <td>1988年4月1日</td>
-                        </tr>
-                        <tr>
-                            <th>資本金</th>
-                            <td>3,000万円</td>
-                        </tr>
-                        <tr>
-                            <th>業務内容</th>
-                            <td>レストランカフェ・コンビニ・貸し会議室・ストレージ、撮影場所の提供、その他付帯事業</td>
-                        </tr>
-                        <tr>
-                            <th>適格請求書発行事業者登録番号</th>
-                            <td>T8010001059440</td>
-                        </tr>
-                        <tr class="last">
-                            <th>株主</th>
-                            <td><a href="http://www.yasuda-re.co.jp/" target="_blank" rel="noopener noreferrer">安田不動産株式会社</a>（100％子会社）</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="access-section">
-        <div class="container">
-            <div class="row" id="">
-                <div class="col-12 text-center animated" data-scroll="once toggle(.fadeInUp, .invisible) addHeight">
-                    <div class="section-text">
-                        <h4>アクセスマップ</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="row google-map">
-                <div class="col-md-10 col-md-offset-1 text-center animated" data-scroll="once toggle(.fadeInUp, .invisible) addHeight">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.434806904904!2d139.76018411525894!3d35.690916380191936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c0f7cee9b2d%3A0x915f2096de15a8ec!2z44CSMTAxLTAwNTQg5p2x5Lqs6YO95Y2D5Luj55Sw5Yy656We55Sw6Yym55S677yS5LiB55uu77yR77yR4oiS77yRIO-8tO-8p-WuieeUsOODk-ODqw!5e0!3m2!1sja!2sjp!4v1616663983744!5m2!1sja!2sjp" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                </div>
-            </div>
-        </div>
+    <section class="section bg-base bg-logo">
+
+        <!--/.section-->
     </section>
     <!-- =============== Footer ===================== -->
     <footer id="footer">
@@ -181,7 +152,7 @@
                         <li><a href="./"><span>ホーム</span></a></li>
                         <li><a href="./service.html"><span>事業案内</span></a></li>
                         <li><a href="./about.html"><span>会社概要</span></a></li>
-                        <!-- <li><a href="./recruit.html"><span>採用情報</span></a></li> -->
+                        <li><a href="./recruit.html"><span>採用情報</span></a></li>
                         <li><a href="./copyright.html"><span>免責事項</span></a></li>
                         <li><a href="./privacy.html"><span>個人情報保護方針</span></a></li>
                         <li><a href="./socialmedia_policy.html"><span>ソーシャルメディアポリシー</span></a></li>

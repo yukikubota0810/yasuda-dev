@@ -52,32 +52,89 @@
         margin: 30px 0 0 0px;
         padding-bottom: 10px;
     }
-    
+
 
 
 }
 
-@media (max-width: 767px) {
-    .service-block {
-      margin-bottom: 30px;
-    }
+/* === 画像を並べる親コンテナ === */
+.service-contents {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+    gap: 6px; /* PC時の画像間隔 */
+  }
   
-    .service-block:last-child {
+  /* === 各画像ブロック === */
+  .service-block-wrapper {
+    position: relative;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  
+  /* === スマホ時：幅100%で表示（左右3px） */
+  @media (max-width: 767px) {
+    .service-block-wrapper {
+      width: calc(100% - 6px);
+      margin-left: 3px;
+      margin-right: 3px;
+    }
+  }
+  
+  /* === PC時：中央揃えで2カラム（固定幅376px） */
+  @media (min-width: 768px) {
+    .service-block-wrapper {
+      width: 376px;
       margin-bottom: 0;
     }
   }
   
-
+  /* === 画像ラップとテキスト重ね === */
+  .image-wrap {
+    position: relative;
+    width: 100%;
+  }
+  
+  .image-wrap img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* === テキストを画像の中央に配置 === */
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    z-index: 2;
+  }
+  
+  /* === 画像全体をリンク可能に === */
+  .full-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+  }
+  
 /* =======================================================
 *
 *   Template Style 
 * Edit this section
 *
 * ======================================================= */
-html{
+html {
     scroll-behavior: smooth;
-  }
-  
+}
+
 body {
     font-family: "Noto Sans Japanese", Arial, sans-serif;
     font-weight: 400;
@@ -214,7 +271,7 @@ li {
 
 #header #navbar li a {
     font-family: "Source Sans Pro", Arial, sans-serif;
-    color: #002951!important;
+    color: #002951 !important;
     position: relative;
     text-align: center;
     font-weight: bold;
@@ -422,10 +479,8 @@ section.service-page h5 {
     margin-top: 40px;
 }
 
-section.service-page p.service-img {
-    
+section.service-page p.service-img {}
 
-}
 section.service-page p.service-txt {
     font-size: 18px;
     margin-top: 10px;
@@ -442,35 +497,35 @@ section.service-contact {
 }
 
 
-.contact-text{
+.contact-text {
     margin-top: 60px;
     margin-bottom: 60px;
 }
 
-ul.service-link{
+ul.service-link {
     padding-inline-start: 0px;
     display: inline-block;
 }
 
-ul.service-link li{
+ul.service-link li {
     background: #E0ECFF;
     float: left;
     margin-right: 15px;
     margin-bottom: 15px;
 }
 
-ul.service-link li a{
+ul.service-link li a {
     font-size: 16px;
     padding: 10px 15px;
     color: #332E2C;
     display: block;
 }
 
-ul.service-link li:hover{
+ul.service-link li:hover {
     opacity: 0.7;
 }
 
-.service-row{
+.service-row {
     margin-top: 100px;
 }
 
@@ -493,22 +548,24 @@ section.about-page h2 {
 section.about-page table {
     width: 100%;
 }
+
 section.about-page .tbl th {
-  background: #E0ECFF;
-  border-top: solid 1px #ccc!important;
-  border-bottom: solid 1px #ccc!important;
-  color: #332E2C;
-  padding: 30px;
-  width: 20%;
+    background: #E0ECFF;
+    border-top: solid 1px #ccc !important;
+    border-bottom: solid 1px #ccc !important;
+    color: #332E2C;
+    padding: 30px;
+    width: 20%;
 }
+
 section.about-page .tbl td {
-  border-top: solid 1px #ccc!important;
-  border-bottom: solid 1px #ccc!important;
-  padding: 10px;
-  padding: 30px;
-  width: 78%;
+    border-top: solid 1px #ccc !important;
+    border-bottom: solid 1px #ccc !important;
+    padding: 10px;
+    padding: 30px;
+    width: 78%;
 }
- 
+
 @media screen and (max-width: 767px) {
 
     section.about-page {
@@ -516,37 +573,38 @@ section.about-page .tbl td {
     }
 
     section.about-page .tbl {
-    width: 100%;
+        width: 100%;
     }
+
     section.about-page .tbl th {
-    background: none;
-    display: block;
-    width: 100%;
+        background: none;
+        display: block;
+        width: 100%;
     }
 
     section.about-page .tbl th,
     section.about-page .tbl td {
-    border: none!important;
-    display: block;
-    width: 100%;
-    padding: 5px 0;
+        border: none !important;
+        display: block;
+        width: 100%;
+        padding: 5px 0;
     }
 }
 
 /* 求人情報 */
 
-section.recruit-page{
+section.recruit-page {
     margin: 100px;
 }
 
-.recruit-area{
+.recruit-area {
     margin-top: 50px;
     border: #707070 1px solid;
     margin-bottom: 100px;
     margin: 0 0 50px 0x;
 }
 
-.recruit-area h3{
+.recruit-area h3 {
     font-size: 2em;
     font-weight: bold;
     text-align: center;
@@ -554,20 +612,20 @@ section.recruit-page{
     margin: 40px 0;
 }
 
-.recruit-area h4{
+.recruit-area h4 {
     font-size: 1em;
     font-weight: bold;
 }
 
 
-.recruit-btn{
+.recruit-btn {
     margin: 30px 0;
     width: 100%;
     background: #E0ECFF;
     text-align: center;
 }
 
-.recruit-btn a{
+.recruit-btn a {
     font-size: 20px;
     color: #332E2C;
     display: block;
@@ -575,11 +633,11 @@ section.recruit-page{
     padding: 15px;
 }
 
-.recruit-btn a:hover{
+.recruit-btn a:hover {
     opacity: 0.7;
 }
 
-.recruit-btn2{
+.recruit-btn2 {
     font-size: 20px;
     margin: 30px 0;
     width: 100%;
@@ -597,17 +655,17 @@ section.recruit-page p.service-txt span {
 @media screen and (max-width: 480px) {
 
 
-    section.recruit-page{
+    section.recruit-page {
         margin: 0px;
     }
-        
-    .recruit-area{
+
+    .recruit-area {
         margin-top: 50px;
         border: none;
         margin-bottom: 50px;
         margin: 0 0 50px 0x;
     }
-    
+
     .recruit-area h3 {
         text-align-last: left;
         font-size: 1.2em;
@@ -622,15 +680,15 @@ section.recruit-page p.service-txt span {
         font-size: 12px;
     }
 
-    section.recruit-page p.service-txt  {
+    section.recruit-page p.service-txt {
         font-size: 12px;
         line-height: 1.5em;
     }
-    
-/*    section.recruit-page p.service-txt br {
+
+    /*    section.recruit-page p.service-txt br {
         display: none;
     }
-*/    
+*/
 }
 
 
@@ -690,7 +748,7 @@ section.privacy-page h4 {
     margin: 40px 0 5px;
     font-size: 18px;
     font-weight: bold;
-/*    color: #112750;*/
+    /*    color: #112750;*/
 }
 
 
@@ -698,31 +756,31 @@ section.privacy-page .pan:before {
     width: 300px;
 }
 
-h3.privacy-h3{
+h3.privacy-h3 {
     font-size: 28px;
     font-weight: bold;
     position: relative;
     display: block;
     line-height: 1.5;
     margin: 120px 0 60px;
-    text-align: center;    
+    text-align: center;
 }
 
 
-p.privacy-right{
-    text-align: right;    
+p.privacy-right {
+    text-align: right;
 }
 
-p.privacy-center{
+p.privacy-center {
     text-align: center;
     margin-top: 40px;
 }
 
-p.single_txt{
+p.single_txt {
     padding: 10px 0;
 }
 
-#privacy02{
+#privacy02 {
     margin-top: 100px;
 }
 
@@ -852,8 +910,7 @@ p.other-brands-img {
     padding-top: 70px !important;
 }
 
-.jumbotron p {
-}
+.jumbotron p {}
 
 .jumbotron p.cover-text-eng {
     font-size: 4em;
@@ -867,8 +924,8 @@ p.other-brands-img {
 }
 
 .jumbotron200 p.cover-text-eng {
-    padding: 0px 30px 30px!important;
-    margin-bottom: 20px!important;
+    padding: 0px 30px 30px !important;
+    margin-bottom: 20px !important;
 }
 
 .jumbotron h1.cover-text-cap {
@@ -882,15 +939,15 @@ p.other-brands-img {
     margin-bottom: 100px;
 }
 
-section.bg-gl{
-  background: #EFEFEF;
+section.bg-gl {
+    background: #EFEFEF;
 }
 
 @media screen and (max-width: 768px) {
 
     .jumbotron200 p.cover-text-eng {
-        padding: 25px 30px 20px!important;
-        margin-bottom: 20px!important;
+        padding: 25px 30px 20px !important;
+        margin-bottom: 20px !important;
     }
 }
 
@@ -914,7 +971,7 @@ section.bg-gl{
         clear: left !important;
         height: auto !important;
         margin-bottom: 0px;
-        padding: 0!important;
+        padding: 0 !important;
     }
 
     .navbar-brand>img {
@@ -2114,7 +2171,7 @@ anchors are inline so you need ot make them block to go full width
     font-weight: 600;
 }
 
-.fv-caption h1 span{
+.fv-caption h1 span {
     font-size: 20px;
     font-weight: normal;
 }
@@ -2143,7 +2200,7 @@ anchors are inline so you need ot make them block to go full width
     font-weight: 600;
 }
 
-.fv-caption-low h1 span{
+.fv-caption-low h1 span {
     font-size: 20px;
     font-weight: normal;
 }
@@ -2175,12 +2232,12 @@ anchors are inline so you need ot make them block to go full width
     text-decoration: none;
     opacity: .9;
     -webkit-border-radius: 5px;
-            border-radius: 5px;
+    border-radius: 5px;
 }
 
 
 .navbar-brand {
-/*    padding: 20px 0 0 0 !important;*/
+    /*    padding: 20px 0 0 0 !important;*/
 }
 
 /* CONTACT */
@@ -2410,20 +2467,26 @@ span.telspan {
     display: inline-block;
     margin-bottom: 1em;
     padding-bottom: 10px;
-  }
+}
 
 .fvText p:before {
-  content: '';
-  position: absolute;
-  left: 50%;
-  bottom: -15px;/*線の上下位置*/
-  display: inline-block;
-  width: 128px;/*線の長さ*/
-  height: 2px;/*線の太さ*/
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);/*位置調整*/
-  background-color: #002951;/*線の色*/
-  border-radius: 2px;/*線の丸み*/
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -15px;
+    /*線の上下位置*/
+    display: inline-block;
+    width: 128px;
+    /*線の長さ*/
+    height: 2px;
+    /*線の太さ*/
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    /*位置調整*/
+    background-color: #002951;
+    /*線の色*/
+    border-radius: 2px;
+    /*線の丸み*/
 }
 
 .bottomText p {
@@ -2432,26 +2495,32 @@ span.telspan {
     display: inline-block;
     margin-bottom: 40px;
     padding-bottom: 10px;
-  }
+}
 
 .bottomText p:before {
-  content: '';
-  position: absolute;
-  left: 50%;
-  bottom: -15px;/*線の上下位置*/
-  display: inline-block;
-  width: 128px;/*線の長さ*/
-  height: 2px;/*線の太さ*/
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);/*位置調整*/
-  background-color: #002951;/*線の色*/
-  border-radius: 2px;/*線の丸み*/
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -15px;
+    /*線の上下位置*/
+    display: inline-block;
+    width: 128px;
+    /*線の長さ*/
+    height: 2px;
+    /*線の太さ*/
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    /*位置調整*/
+    background-color: #002951;
+    /*線の色*/
+    border-radius: 2px;
+    /*線の丸み*/
 }
 
 
 .service-section .service-contents .col-sm-4,
-.service-section .service-contents .col-md-4{
-    padding: 0!important;
+.service-section .service-contents .col-md-4 {
+    padding: 0 !important;
 }
 
 .service-section .service-inner {
@@ -2943,13 +3012,14 @@ dl#policyArea dt {
 @media only screen and (max-width: 479px) {
 
     .navbar-brand {
-        padding: 0!important;
+        padding: 0 !important;
     }
 
     .navbar-brand>img {
         margin-top: 5px;
     }
-        .container {
+
+    .container {
         width: 100%;
         padding: 0px 20px 0px;
     }
@@ -3028,7 +3098,7 @@ dl#policyArea dt {
     .pagetop {
         bottom: 50px;
     }
-    
+
     section.about-page .tbl th {
         color: #002951;
     }
@@ -3041,8 +3111,9 @@ dl#policyArea dt {
     }
 
 
-    .service-section .service-contents .col-sm-4, .service-section .service-contents .col-md-4 {
-        padding: 0!important;
+    .service-section .service-contents .col-sm-4,
+    .service-section .service-contents .col-md-4 {
+        padding: 0 !important;
         margin-bottom: 20px;
     }
 
@@ -3099,14 +3170,14 @@ dl#policyArea dt {
         margin-top: 10px;
         border-bottom: none;
     }
-    
+
     section.service-page p.service-txt {
         font-size: 14px;
         margin-top: 10px;
         line-height: 1.5em;
         margin-bottom: 20px;
-    }    
-    
+    }
+
     footer .footer-navi ul li {
         margin-right: 40px;
         margin-bottom: 10px;
@@ -3211,50 +3282,50 @@ td.recruit-td {
     width: 20%;
 }
 
-p.error_messe{
+p.error_messe {
     color: #E33C0B;
 }
 
 /*  PCスマホ切り替え */
-.pc-show{
+.pc-show {
     display: block;
 }
 
-.sp-show{
+.sp-show {
     display: none;
 }
 
 
 @media only screen and (max-width: 479px) {
-    .pc-show{
+    .pc-show {
         display: none;
     }
 
-    .sp-show{
+    .sp-show {
         display: block;
     }
 }
 
 /* ソーシャルメディアポリシー 20210722*/
 
-.txt-wrapper .list{
+.txt-wrapper .list {
     line-height: 1.71 !important;
     max-height: 999999px;
     margin: 8px 0;
 }
 
-.txt-wrapper .list.dot-list{
+.txt-wrapper .list.dot-list {
     padding-left: 10px;
-    list-style-position: outside; 
+    list-style-position: outside;
     list-style-type: disc;
 }
 
-.txt-wrapper .list.dot-list li{
+.txt-wrapper .list.dot-list li {
     padding-bottom: 10px;
-    padding-left:1em;
-    text-indent:-1em;
+    padding-left: 1em;
+    text-indent: -1em;
 }
 
-.txt-wrapper .list.dot-list li a{
+.txt-wrapper .list.dot-list li a {
     text-decoration: underline;
 }
